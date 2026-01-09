@@ -1,0 +1,15 @@
+pipeline {
+    agent {label 'agent1'}
+    stages{
+        stage('Pipeline Stages'){
+            steps{
+                sh "ls"
+            }
+        }
+        stage('Second Stage'){
+            steps {
+                sh "pwd"
+            }
+        }
+    }
+}
